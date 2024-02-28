@@ -16,3 +16,8 @@ A **escala** refere-se à capacidade do software de lidar com o aumento da deman
 
 **Trade-off** é a escolha entre opções com vantagens e desvantagens. Trade-offs envolvem decisões como tempo vs. qualidade, custo vs. funcionalidade e segurança vs. usabilidade. A escolha ideal depende do contexto do projeto, dos objetivos de negócio e das necessidades dos usuários.
 
+## Comentários - Dê três exemplos de Trade-off
+- Decisão entre utilizar um servidor em nuvem vs um servidor local.
+- Decisão entre contratar uma empresa externa ou produzir o próprio software.
+- Decisão entre utilizar um banco de dados relacional ou um não relacional.
+
