@@ -22,7 +22,7 @@ A **escala** refere-se à capacidade do software de lidar com o aumento da deman
 - Decisão entre utilizar um banco de dados relacional ou um não relacional.
 
 ## Atividade 3 - Comentar sobre a arquitetura e baseado em seus trade-offs em que situação aplica-la
-[Slides com as arquiteturas analisadas] (https://docs.google.com/presentation/d/1Lmad2CS1pM1UycQpYn6FiDm2NsEO6CVSchym65tuk4U/edit#slide=id.g1f2b4e971a0_0_179)
+[Slides com as arquiteturas analisadas](https://docs.google.com/presentation/d/1Lmad2CS1pM1UycQpYn6FiDm2NsEO6CVSchym65tuk4U/edit#slide=id.g1f2b4e971a0_0_179)
 
 > Layered Architeture Style
 Esse tipo de arquitetura possui uma simplicidade alta e um custo muito baixo, porém é diffícil de escalar e de criar novas features, então é ideal para projetos que não tem muitas mudanças como um sistema de mercado.
@@ -43,5 +43,16 @@ A arquitetura baseada em eventos é um tipo de arquitetura, por exemplo da Uber,
 A organização modular e descentralizada da arquitetura de microserviços facilita o desenvolvimento, a manutenção e a escalabilidade do sistema, além de permitir a entrega rápida de novas funcionalidades. Ela é ideal para sistemas complexos em constante mudança, mas exige uma cultura DevOps forte e pode ser complexa de gerenciar. Exemplos de sistemas que utilizam essa arquitetura incluem Netflix, Amazon e Spotify.
 
 
+# Escolha um sistema e baseado nele:
 
+## Atividade 4 - defina sua arquitetura debatendo tradeoffs com os requisitos não funcionais comentados em aula
+Imagine um sistema para um caixa de supermercado, onde ele lê um código de barras, e retorna um preço, armazenando numa lista até o final da compra. 
+
+A arquitetura correta para este tipo de sistema é a arquitetura em camadas, onde cada uma performa uma função específica. O baixo custo e a performance necessária ao utilizar o sistema, mais do que compensa a dificuldade de evoluir e escalá-lo.
+
+Em suma, a arquitetura em camadas se configura como a escolha acertada para um sistema de caixa de supermercado que busca eficiência e baixo custo. Sua estrutura modular proporciona facilidade de manutenção, desempenho otimizado e alto grau de reuso de código. Ao compreender os tradeoffs, garantimos a flexibilidade e escalabilidade necessárias para que o sistema acompanhe o crescimento do supermercado e atenda às demandas futuras.
+
+## Atividade 5 - Inicie seu diagrama de classes de uma das partes da arquitetura (escolha uma parte de backend por favor)
+
+![Alt text](image-1.png)
 
