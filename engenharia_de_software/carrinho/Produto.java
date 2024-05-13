@@ -1,43 +1,21 @@
-package engenharia_de_software.carrinho;
-
-import java.util.LinkedList;
-import java.util.List;
-
 public class Produto {
 
-    private int id;
     private String nome;
-    private double preco;
     private int quantidadeEstoque;
+    private double preco;
 
-    private List<Produto> produtos = new LinkedList<Produto>();
-
-    public Produto(int id, String nome, double preco, int quantidadeEstoque) {
-        this.id = id;
+    public Produto(String nome, int quantidadeEstoque, double preco) {
         this.nome = nome;
-        this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
+        this.preco = preco;
     }
 
-    public List<Produto> buscarProduto(String nome) {
-        List<Produto> produtosEncontrados = new LinkedList<Produto>();
-        for (Produto produto: produtos) {
-            if (produto.getNome().equals(nome)) produtosEncontrados.add(produto);
-        }
-        return produtosEncontrados;
-    }
-    public void setProduto(int id, String nome, double preco) {
-        this.id = id;
-        this.nome = nome;
-        this.preco = preco;
-        
-    }
-    
-    public int getId() {
-        return id;
-    }
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getQuantidadeEstoque() {
@@ -48,14 +26,11 @@ public class Produto {
         this.quantidadeEstoque = quantidadeEstoque;
     }
 
-    public void cadastrarProduto(Produto produto) {
-        produtos.add(produto);
+    public double getPreco() {
+        return preco;
     }
 
-    public void removerProduto() {
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
-
-    public void alterarProduto() {
-    }
-
 }
