@@ -46,6 +46,7 @@ A organização modular e descentralizada da arquitetura de microserviços facil
 # Escolha um sistema e baseado nele:
 
 ## Atividade 4 - defina sua arquitetura debatendo tradeoffs com os requisitos não funcionais comentados em aula
+![alt text](image.png)
 Imagine um sistema para um caixa de supermercado, onde ele lê um código de barras, e retorna um preço, armazenando numa lista até o final da compra. 
 
 A arquitetura correta para este tipo de sistema é a arquitetura em camadas, onde cada uma performa uma função específica. O baixo custo e a performance necessária ao utilizar o sistema, mais do que compensa a dificuldade de evoluir e escalá-lo.

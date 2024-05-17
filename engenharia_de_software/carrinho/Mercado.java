@@ -31,6 +31,11 @@ public class Mercado {
         produtos.add(produto);
     }
 
+    public List<Produto> getProdutos () {
+        return produtos;
+        
+    }
+
     public void listarEstoque() {
         System.out.println("Estoque do mercado " + nome + ":");
         for (Produto produto : produtos) {
