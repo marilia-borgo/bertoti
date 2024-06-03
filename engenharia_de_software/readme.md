@@ -57,3 +57,11 @@ Em suma, a arquitetura em camadas se configura como a escolha acertada para um s
 
 ![Alt text](image-1.png)
 
+## Atividade 6 - Implementar as classes do diagrama de classes
+
+## Atividade 7 - Adicionar os testes unitários das classes feitas.
+
+## Atividade 8 - Fazer o diagrama de casos de uso do sistema implementado
+
+![Alt text](diagrama_casos_de_uso.png)
+
