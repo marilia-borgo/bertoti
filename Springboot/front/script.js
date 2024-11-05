@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const name = document.getElementById("name").value;
 
-        fetch("http://localhost:8080/users_create", {
+        fetch("http://localhost:8082/users_create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const id = document.getElementById("editId").value;
         const name = document.getElementById("editName").value;
 
-        fetch(`http://localhost:8080/users/${id}`, {
+        fetch(`http://localhost:8082/users/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const id = document.getElementById("deleteId").value;
 
-        fetch(`http://localhost:8080/users/delete/${id}`, {
+        fetch(`http://localhost:8082/users/delete/${id}`, {
             method: "GET",
         })
             .then(response => response.text())
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     refreshUsersButton.addEventListener("click", refreshUsers);
 
     function refreshUsers() {
-        fetch("http://localhost:8080/users")
+        fetch("http://localhost:8082/users")
             .then(response => response.json())
             .then(data => {
                 usersList.innerHTML = "";
