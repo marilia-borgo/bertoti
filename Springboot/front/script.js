@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("User created successfully!");
                 refreshUsers();
             })
-            .catch(error => console.error("Error:", error));
+            .catch(error => console.error("Error:", error)); 
     });
 
     editUserForm.addEventListener("submit", function (e) {
