@@ -1,3 +1,5 @@
+package strategy.pattern;
+
 class ShoppingCart {
     private PaymentStrategy paymentStrategy;
 

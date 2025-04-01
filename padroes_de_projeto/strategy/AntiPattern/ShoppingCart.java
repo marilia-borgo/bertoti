@@ -1,4 +1,6 @@
-class ShoppingCart {
+package strategy.AntiPattern;
+
+public class ShoppingCart {
     public void checkout(String paymentType, int amount) {
         if (paymentType.equals("CreditCard")) {
             System.out.println("Paid " + amount + " using Credit Card.");

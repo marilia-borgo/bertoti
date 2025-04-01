@@ -1,3 +1,4 @@
+package strategy.AntiPattern;
 public class StrategyAntiPatternDemo {
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
