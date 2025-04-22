@@ -1,3 +1,4 @@
+package observer.pattern;
 class WeatherDemo {
     public static void main(String[] args) {
         // Criando o subject (estação)

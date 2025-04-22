@@ -1,50 +1,40 @@
-// Anti-pattern simplificado - com acoplamento forte
-class WeatherStationCoupled {
-    // Referências diretas para cada display - acoplamento forte
-    private WeatherDisplayCoupled phoneApp;
-    private WeatherDisplayCoupled webSite;
+// Classe que representa a estação meteorológica (sujeito)
+public class WeatherStationCoupled {
+    // A estação conhece diretamente os displays
+    private WeatherDisplayCoupled phoneDisplay;
+    private WeatherDisplayCoupled webDisplay;
     private WeatherDisplayCoupled tvDisplay;
-    
-    // Dados meteorológicos
-    private float temperature;
-    private float humidity;
-    private float pressure;
-    
-    // Método para adicionar displays específicos
-    public void setDisplays(WeatherDisplayCoupled phoneApp, 
-                           WeatherDisplayCoupled webSite, 
-                           WeatherDisplayCoupled tvDisplay) {
-        this.phoneApp = phoneApp;
-        this.webSite = webSite;
-        this.tvDisplay = tvDisplay;
+
+    // Define os displays que vão receber atualizações
+    public void setDisplays(WeatherDisplayCoupled phone, WeatherDisplayCoupled web, WeatherDisplayCoupled tv) {
+        this.phoneDisplay = phone;
+        this.webDisplay = web;
+        this.tvDisplay = tv;
     }
-    
-    // Método para remover um display específico
-    public void removeDisplay(String displayName) {
-        if (phoneApp != null && phoneApp.getName().equals(displayName)) {
-            phoneApp = null;
-        } else if (webSite != null && webSite.getName().equals(displayName)) {
-            webSite = null;
-        } else if (tvDisplay != null && tvDisplay.getName().equals(displayName)) {
-            tvDisplay = null;
+
+    // Atualiza os dados e notifica cada display manualmente
+    public void updateWeatherData(float temperature, float humidity, float pressure) {
+        if (phoneDisplay != null) {
+            phoneDisplay.showData(temperature, humidity, pressure);
         }
-    }
-    
-    // Método que atualiza os dados e notifica cada display manualmente
-    public void setMeasurements(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        
-        // Notificação manual para cada display
-        if (phoneApp != null) {
-            phoneApp.display(temperature, humidity, pressure);
+
+        if (webDisplay != null) {
+            webDisplay.showData(temperature, humidity, pressure);
         }
-        if (webSite != null) {
-            webSite.display(temperature, humidity, pressure);
-        }
+
         if (tvDisplay != null) {
-            tvDisplay.display(temperature, humidity, pressure);
+            tvDisplay.showData(temperature, humidity, pressure);
+        }
+    }
+
+    // Remove um display manualmente com base no nome
+    public void removeDisplay(String displayName) {
+        if (phoneDisplay != null && phoneDisplay.getDisplayName().equals(displayName)) {
+            phoneDisplay = null;
+        } else if (webDisplay != null && webDisplay.getDisplayName().equals(displayName)) {
+            webDisplay = null;
+        } else if (tvDisplay != null && tvDisplay.getDisplayName().equals(displayName)) {
+            tvDisplay = null;
         }
     }
 }

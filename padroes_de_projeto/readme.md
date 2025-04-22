@@ -15,32 +15,11 @@ O padrão Singleton garante que uma classe tenha apenas uma instância e fornece
 
 ### UML
 #### Singleton
-![Singleton UML](./uml/singleton_pattern.png)
-
-#### Anti-pattern
-![Singleton Anti-pattern UML](./uml/singleton_anti_pattern.png)
+![Singleton UML](./singleton/Singleton-pattern.png)
 
 ---
 
-## 2. Factory Method
-
-### Resumo
-O padrão Factory Method define uma interface para criar objetos, mas permite que as subclasses decidam qual classe instanciar. Ele promove o princípio de programação para interfaces, não para implementações.
-
-### Diferenças entre Factory Method e Anti-pattern
-- **Factory Method**: Centraliza a criação de objetos e facilita a manutenção e extensão do código.
-- **Anti-pattern**: Criação de objetos espalhada pelo código, dificultando a manutenção e aumentando o acoplamento.
-
-### UML
-#### Factory Method
-![Factory Method UML](./uml/factory_method_pattern.png)
-
-#### Anti-pattern
-![Factory Method Anti-pattern UML](./uml/factory_method_anti_pattern.png)
-
----
-
-## 3. Observer
+## 2. Observer
 
 ### Resumo
 O padrão Observer define uma dependência um-para-muitos entre objetos, de forma que, quando um objeto muda de estado, todos os seus dependentes são notificados automaticamente.
@@ -51,10 +30,28 @@ O padrão Observer define uma dependência um-para-muitos entre objetos, de form
 
 ### UML
 #### Observer
-![Observer UML](./uml/observer_pattern.png)
+![Observer UML](./observer/pattern.png)
 
 #### Anti-pattern
-![Observer Anti-pattern UML](./uml/observer_anti_pattern.png)
+![Observer Anti-pattern UML](./observer/anti-pattern.png)
+
+---
+
+## 3. Composite
+
+### Resumo
+O padrão Composite permite que objetos sejam organizados em estruturas de árvore para representar hierarquias parte-todo. Ele trata objetos individuais e composições de objetos de maneira uniforme.
+
+### Diferenças entre Composite e Anti-pattern
+- **Composite**: Promove a composição de objetos em estruturas de árvore, facilitando a manipulação de hierarquias complexas.
+- **Anti-pattern**: Implementações que não tratam objetos compostos e individuais de forma uniforme, resultando em código redundante e difícil de manter.
+
+### UML
+#### Composite
+![Composite UML](./composity/pattern.png)
+
+#### Anti-pattern
+![Composite Anti-pattern UML](./composity/anti-pattern.png)
 
 ---
 
@@ -69,27 +66,8 @@ O padrão Strategy define uma família de algoritmos, encapsula cada um deles e 
 
 ### UML
 #### Strategy
-![Strategy UML](./uml/strategy_pattern.png)
+![Strategy UML](./strategy/pattern_uml.png)
 
 #### Anti-pattern
-![Strategy Anti-pattern UML](./uml/strategy_anti_pattern.png)
-
----
-
-## 5. Decorator
-
-### Resumo
-O padrão Decorator permite adicionar funcionalidades a um objeto dinamicamente, sem alterar sua estrutura. Ele é útil para evitar a criação de subclasses desnecessárias.
-
-### Diferenças entre Decorator e Anti-pattern
-- **Decorator**: Adiciona responsabilidades de forma flexível e reutilizável.
-- **Anti-pattern**: Uso excessivo de herança, resultando em um código rígido e difícil de modificar.
-
-### UML
-#### Decorator
-![Decorator UML](./uml/decorator_pattern.png)
-
-#### Anti-pattern
-![Decorator Anti-pattern UML](./uml/decorator_anti_pattern.png)
-
+![Strategy Anti-pattern UML](./strategy/pattern_uml.png)
 ---

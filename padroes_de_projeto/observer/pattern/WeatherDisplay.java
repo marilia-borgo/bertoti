@@ -1,3 +1,5 @@
+package observer.pattern;
+
 class WeatherDisplay implements Observer {
     private String name;
     
