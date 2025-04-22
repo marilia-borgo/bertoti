@@ -6,3 +6,4 @@ public class StrategyAntiPatternDemo {
         cart.checkout("PayPal", 200);
     }
 }
+
