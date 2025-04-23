@@ -9,9 +9,8 @@ Este repositório contém exemplos de padrões de projeto (Design Patterns) e se
 ### Resumo
 O padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela. É útil para gerenciar recursos compartilhados, como conexões de banco de dados ou configurações globais.
 
-### Diferenças entre Singleton e Anti-pattern
+### Sobre singleton
 - **Singleton**: Controla o número de instâncias, garantindo que apenas uma seja criada.
-- **Anti-pattern**: Não controla a criação de instâncias, o que pode levar a inconsistências e problemas de concorrência.
 
 ### UML
 #### Singleton
