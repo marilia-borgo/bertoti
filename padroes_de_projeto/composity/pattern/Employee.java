@@ -1,5 +1,6 @@
 package composity.pattern;
 
+// transformar em interface
 abstract class Employee {
     protected String name;
 
