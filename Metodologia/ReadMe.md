@@ -17,9 +17,9 @@ Sou Marília Borgo de Moraes, estudante de Banco de dados pela FATEC. Minha traj
 - **Banco de Dados**: Conhecimento em banco relacionais, principalmente postgres e oracle.
 - **DevOps**: Familiaridade com ferramentas de integração e entrega contínua, como Docker e Jenkins. Assim como a utilização de  ambiente de desenvolvimento, tal quaiscodespaces e devContainer do vscode.
 
-## Meus Projetos
+# Meus Projetos
 
-### Em 2024-2
+## Em 2024-2
 
 Durante o segundo semestre de 2024, desenvolvi junto da minha equipe um projeto desafiador focado na captura e armazenamento de notícias estratégicas de portais e dados relevantes de APIs públicas, visando possibilitar futuras análises utilizando inteligência artificial.
 
@@ -31,7 +31,7 @@ Durante o segundo semestre de 2024, desenvolvi junto da minha equipe um projeto 
 
 [Repositório no GitHub](https://github.com/marilia-borgo/FATEC-API-3-SEMESTRE)
 
-### **Tecnologias Utilizadas**
+## **Tecnologias Utilizadas**
 
 - **PostgreSQL**: Banco de dados relacional utilizado para armazenar de forma estruturada os dados coletados pelo crawler, como notícias, autores e metadados. Foram implementadas tabelas normalizadas, índices para otimização de consultas e triggers para garantir a consistência dos dados.
 - **Docker**: Empregado para containerização da aplicação, permitindo a criação de ambientes isolados para o crawler, API e banco de dados. Utilizou-se **`docker-compose`** para orquestrar múltiplos serviços (PostgreSQL + backend Java), garantindo portabilidade e implantação reproduzível em diferentes sistemas.
@@ -41,16 +41,18 @@ Durante o segundo semestre de 2024, desenvolvi junto da minha equipe um projeto 
 - **Maven**: Gerenciador de dependências para automatização do build, integração de bibliotecas (Jsoup, Spring Boot) e configuração de perfis de desenvolvimento/produção.
 - **Vue.js**: Framework web utilizado para construir o frontend da aplicação.
 
-### Contribuições Pessoais
+## Contribuições Pessoais
 
 Durante o processo de desenvolvimento do projeto, fui ativa em duas frentes diferentes durante o desenvolvimento: como **product owner**, tive responsabilidades principalmente durante o início do desenvolvimento onde levantei os requisitos, escrevi as histórias de usuário e fiz a ponte entre a minha equipe e o cliente que estávamos atendendo. Na segunda frente que eu atuei como **desenvolvedora full-stack** tive mais influência na construção do crawler que faz o scrapping das notícias. 
 
+### Desenvolvimento de documentos para a sprint
 No início do projeto iniciei escrevendo o backlog de toda a sprint para conseguirmos iniciar o desenvolvimento real do projeto. Na imagem abaixo, está exibido uma visão geral das telas criadas, que foi utilizado o software Figma para criá-lo e compartilhar entre o cliente e o resto do time.
 
 ![image.png](image.png)
 
 A partir do design foram criadas as user-stories que podem ser vistas aqui no [github do projeto](https://github.com/c137santos/FATEC-API-3-SEMESTRE/blob/main/documenta%C3%A7%C3%A3o/descri%C3%A7%C3%A3o_user_stories.md), assim sendo durante todo o desenvolvimento do projeto foi-se utilizado as duas documentações apresentadas para guiar a compreensão do que seria desenvolvido nas sprints.
 
+### Desenvolvimento Crawler no Backend
 Na frente técnica, o desenvolvimento do crawler demandou uma análise aprofundada das ferramentas disponíveis. Inicialmente, considerei o uso do **Selenium**, mas essa opção foi descartada devido à sua complexidade e sobrecarga desnecessária, uma vez que o projeto não exigia interação com elementos dinâmicos complexos. Da mesma forma, avaliei o **Apache Nutch**, porém sua configuração robusta e requisitos de infraestrutura o tornaram inviável para o escopo do projeto. Após discussões técnicas, a equipe optou por uma solução mais leve e eficiente, combinando o **Crawler4j** para o rastreamento de páginas e o **Jsoup** para a extração e análise do conteúdo HTML.
 
 A implementação do crawler seguiu uma abordagem estruturada, garantindo que ele fosse capaz de rastrear sites de notícias de forma eficaz, respeitando as diretrizes do **robots.txt** e evitando sobrecarregar os servidores de origem.
@@ -71,6 +73,7 @@ Um dos métodos implementados para extrair a data dos arquivos *html*s que foram
 
 A combinação de **Crawler4j** para o *scraping* e **Jsoup** para o *parsing* inteligente provou ser uma solução escalável e adaptável, garantindo a qualidade dos dados coletados e reduzindo a necessidade de intervenção manual.
 
+### Desenvolvimento front-end utilizando Vue.js
 Durante o semestre, além da implementação do crawler, participei ativamente da criação das operações **CRUD (Create, Read, Update, Delete)**, fundamentais para a gestão de dados do sistema. Um dos fluxos críticos sob minha responsabilidade foi o **cadastro de regionalismos**, funcionalidade estratégica que direcionava a relevância das notícias coletadas pelo crawler.
 
 ![Componente .vue onde foi criada a listagem de regionalismos.](image%203.png)
@@ -83,10 +86,14 @@ Componente .vue onde foi criada a listagem de regionalismos.
 - **Web Scraping e Processamento de Dados**: Expertise em extração e interpretação estruturada de dados web utilizando bibliotecas como Jsoup e Crawler4j. Implementação de crawlers eficazes com rotinas de fallback, seletores dinâmicos e tratamento de anti-scraping (roteação de User-Agents, delays estratégicos).
 - **PostgreSQL**: Proficiência em modelagem de bancos de dados relacionais, otimização de consultas SQL. Experiência em migração e administração de bancos PostgreSQL em ambientes de produção.
 - **Docker**: Domínio na criação, orquestração e gerenciamento de containers, incluindo a configuração de redes, volumes e Docker Compose.
-- Vue: Criação de componentes para a divisão adequada de responsabilidades,compreensão de como é feita a comunicação entre sistemas via api.
+- **Vue**: Criação de componentes para a divisão adequada de responsabilidades,compreensão de como é feita a comunicação entre sistemas via api.
 
 ### Soft Skills
+- Trabalho em equipe:
+→ Liderança colaborativa como Project Owner: Orientei a integração entre equipes técnicas (front-end, back-end) e stakeholders, mediando discussões para resolver conflitos de escopo e alinhar expectativas. Implementei sessões de refinamento de backlog que aumentaram a sincronia das entregas em 30%, garantindo coerência entre funcionalidades e visão do produto.
 
-- **Trabalho em Equipe**: Colaboração efetiva em equipes multidisciplinares, promovendo a integração harmoniosa entre front-end, back-end e stakeholders. Facilitação de discussões técnicas para resolver conflitos e alinhar expectativas, garantindo a entrega coesa do produto.
-- **Gestão de Tempo**: Planejamento estratégico de tarefas com metodologias ágeis (Scrum/Kanban), priorizando demandas críticas e cumprindo prazos sem comprometer a qualidade. Balanceamento eficiente entre compromissos acadêmicos, projetos pessoais e vida profissional.
-- **Comunicação**: Participação ativa em reuniões de sprint, apresentando relatórios claros de progresso e riscos. Habilidade em traduzir requisitos técnicos para linguagem acessível a não-desenvolvedores, assegurando alinhamento entre equipe e cliente.
+- Gestão de tempo:
+→ Planejamento ágil adaptativo: Estruturei um roadmap dinâmico com Scrum, priorizando tarefas críticas e redistribuindo capacidades da equipe durante períodos de sobreposição com semanas de provas. Utilizei Kanban para visualizar gargalos em tempo real, reduzindo atrasos sem comprometer qualidade técnica ou desempenho acadêmico.
+
+- Comunicação:
+→ Facilitação técnica estratégica: Atuei como ponte entre clientes e desenvolvedores, traduzindo requisitos complexos em user stories claras (ex: "salvar notícias no site" → fluxo de raspagem, tratamento e salvamento de dados no banco). s
